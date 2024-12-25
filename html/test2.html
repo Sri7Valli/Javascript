@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script>
+      const marks = [100, 98, 89, 90, 99];
+
+      function totalMarks(total) {
+        let result = total[0] + total[1] + total[2] + total[3] + total[4];
+        return result;
+      }
+      let final = totalMarks(marks);
+      console.log(final);
+
+      let names = ["valli", "suriya", "mercy", "kamali"];
+
+      function insertNames(include) {
+        names.push("shakthi", "kaushik");
+        return names;
+      }
+      let inserted = insertNames(names);
+      console.log(inserted);
+
+      const name = [];
+
+      function listOfNames(added) {
+        name.push("cauvery", "mari", "maya", "ravan");
+        return name;
+      }
+
+      let list = listOfNames(name);
+      console.log(list);
+
+      let age = 28;
+
+      function ageFactor(value) {
+        if (age > 1 && age <= 17) {
+          alert(`You are just ${age}, GO ENJOY YOUR LIFE`);
+        } else if (age >= 18 && age <= 58) {
+          alert(`You are ${age}, You are an adult, TASTE THE LIFE`);
+        } else if (age > 59) {
+          alert(
+            `You are ${age}, You have worked hard, GO ENJOY YOUR LIFE AGAIN`
+          );
+        }
+      }
+      let overAll = ageFactor(age);
+      console.log(overAll);
+    </script>
+  </body>
+</html>

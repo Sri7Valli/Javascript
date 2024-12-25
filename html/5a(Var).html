@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable Exercise</title>
+  </head>
+  <body>
+    <script>
+      /*const name = "Sri Valli";
+      console.log(`My name is: ${name}`);
+
+      let cost = 1 * 5 + 2 * 3 + 9;
+      console.log(`Cost of food: $${cost} `);
+
+      let tax = (1 * 5 + 2 * 3 + 9) * 0.1;
+      console.log(`Tax (10%): $${tax}`);
+
+      let total = cost + tax;
+      console.log(`Total cost: $${total}`);
+
+      var myName = "Srivalli";
+
+      var tweet = prompt("Compose your tweet here:");
+      var tweetCount = tweet.length;
+      alert(
+        "You have written " +
+          tweetCount +
+          " characters , you have " +
+          (200 - tweetCount) +
+          " Characters left"
+      );*/
+
+      // var compose = prompt("Compose your tweet here:");
+      // var count = 100 - compose.length;
+      // var words = compose.slice(0, 100);
+      // alert(words);
+
+      var query = prompt("What is your name?");
+      var firstNameCaps = query.slice(0, 1).toUpperCase();
+      var restOfName = query.slice(1, query.length);
+      restOfName = restOfName.toLowerCase();
+      var acceptanceCreteria = firstNameCaps + restOfName;
+
+      alert(`Hello "${acceptanceCreteria}" `);
+    </script>
+  </body>
+</html>

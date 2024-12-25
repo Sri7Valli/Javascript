@@ -1,0 +1,58 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-button {
+  background-color: rgb(255, 216, 20);
+  color: black;
+  border-radius: 30px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  font-size: 25px;
+}
+
+.uber-button {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 19px;
+  border-radius: 10px;
+}
+
+.later-button {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 19px;
+  border-radius: 10px;
+}
+
+.gameButton {
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.colour {
+  background-color: gray;
+}
+
+.switch {
+  background-color: purple;
+  color: wheat;
+  cursor: pointer;
+}
+
+.switched {
+  background-color: azure;
+  color: purple;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex</title>
+
+    <style>
+      .flexbox {
+        flex-direction: row;
+        display: flex;
+        height: 60px;
+      }
+      .column1 {
+        background-color: rgb(238, 181, 210);
+        width: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 2px;
+        align-items: center;
+      }
+
+      .item-1 {
+        background-color: black;
+      }
+      .item-2 {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .box1 {
+        background-color: lightblue;
+        width: 100px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .row {
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+      }
+
+      .row-two {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row-three {
+        background-color: black;
+        color: white;
+        display: flex;
+      }
+
+      .two-rows {
+        width: 300px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 30px; display: flex">
+      <div style="background-color: lightgreen">50px</div>
+      <div style="background-color: lightblue">1fr</div>
+      <div style="background-color: lightpink">75px</div>
+    </div>
+
+    <div
+      style="
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      "
+    >
+      <div style="background-color: lightgreen">50px</div>
+      <div style="background-color: lightblue">50px</div>
+      <div style="background-color: lightpink">50px</div>
+      <div style="background-color: lightblue">50px</div>
+    </div>
+
+    <div
+      style="
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: gray;
+        border: solid;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      "
+    >
+      <div style="background-color: lightgreen">50px</div>
+      <div style="background-color: lightblue">50px</div>
+    </div>
+
+    <div class="flexbox">
+      <div class="column1">
+        <div class="item-1">item1</div>
+      </div>
+      <div class="item-2"></div>
+    </div>
+
+    <div class="boxes">
+      <div class="box1">
+        <div class="col">column1</div>
+      <div class="row">
+        <div>row1</div>
+          <div class="two-rows">
+        <div class="row-two">row2</div>
+        <div class="row-three">row2</div>
+      </div>
+    </div>
+  </body>
+</html>

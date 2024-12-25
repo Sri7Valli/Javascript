@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <p>
+      <button
+        onclick="
+          calculator('1');
+          "
+      >
+        1
+      </button>
+      <button
+        onclick="
+          calculator('2');
+      "
+      >
+        2
+      </button>
+      <button
+        onclick="
+          calculator('3');
+      "
+      >
+        3
+      </button>
+      <button
+        onclick="
+          calculator('+');
+      "
+      >
+        +
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        calculator('4');
+        "
+      >
+        4
+      </button>
+      <button
+        onclick="
+      calculator('5');
+      "
+      >
+        5
+      </button>
+      <button
+        onclick="
+     calculator('6');
+      "
+      >
+        6
+      </button>
+      <button
+        onclick="
+      calculator('-');
+      "
+      >
+        -
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+      calculator('7');
+      "
+      >
+        7
+      </button>
+      <button
+        onclick="
+      calculator('8');
+      "
+      >
+        8
+      </button>
+      <button
+        onclick="
+      calculator('9');
+      "
+      >
+        9
+      </button>
+      <button
+        onclick="
+      calculator('*');
+      "
+      >
+        *
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+      calculator('0');
+      "
+      >
+        0
+      </button>
+      <button
+        onclick="
+      calculator('.');
+      "
+      >
+        .
+      </button>
+      <button
+        onclick="eval(calculation);
+        calculation = eval(calculation);
+        console.log(calculation);
+        localStorage.setItem('calculation', calculation);
+
+      "
+      >
+        =
+      </button>
+      <button
+        onclick="
+      calculator('/');
+      "
+      >
+        /
+      </button>
+    </p>
+
+    <button
+      onclick=" 
+        calculation = '';
+        console.log('Cleared.');
+        localStorage.setItem('calculation', calculation);
+
+    "
+    >
+      Clear
+    </button>
+
+    <p class="total"></p>
+
+    <script>
+      let calculation = localStorage.getItem("calculation") || "";
+
+      function calculator(value) {
+        calculation += value;
+        console.log(calculation);
+        localStorage.setItem("calculator", calculator);
+
+        const totalCount = (document.querySelector(".total").innerHTML =
+          calculation);
+      }
+    </script>
+  </body>
+</html>

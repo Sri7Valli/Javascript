@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: arial;
+}
+
+.rpsTitle {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.image {
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(25, 25, 25);
+}
+
+.buttonElement {
+  background-color: rgb(25, 25, 25);
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+  border: 3px solid white;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.js-result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.js-button {
+  margin-top: 60px;
+}
+
+.reset-button {
+  height: 32px;
+  width: 113px;
+  font-size: 15px;
+  border: none;
+}

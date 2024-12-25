@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robot</title>
+  </head>
+  <body>
+    <script>
+      // url: https://stanford.edu/~cpiech/karel/ide.html (Put this URL in the google!!) {Select - 5*5}
+      function main() {
+        firstLine();
+        secondLine();
+        firstLine();
+        secondLine();
+        firstLine();
+      }
+
+      function firstLine() {
+        putBeeper();
+        turnLeft();
+        move();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+      }
+
+      function secondLine() {
+        turnRight();
+        move();
+        turnRight();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnLeft();
+        move();
+      }
+    </script>
+  </body>
+</html>

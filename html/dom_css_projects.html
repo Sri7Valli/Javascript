@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding CSS to the projects</title>
+    <link rel="stylesheet" href="../styles/dom_projects.css" />
+  </head>
+  <body>
+    <p class="subscribe">YouTube Subscribe Button</p>
+    <button
+      onclick="
+        youtube();
+    "
+      class="subscribeButton"
+    >
+      Subscribe
+    </button>
+
+    <p class="shipCal">Amazon Shipping Calculator</p>
+    <p class="under">Orders under $40 = +$10 shipping.</p>
+    <p class="over">Orders over $40 = FREE shipping.</p>
+
+    <input class="costInput" placeholder="Cost of order" />
+
+    <button
+      onclick="
+    amazonCalculator();
+    
+    "
+      class="calciButton"
+    >
+      Calculate
+    </button>
+
+    <p class="shipDetails"></p>
+
+    <p class="errorMessage"></p>
+
+    <script>
+      function youtube() {
+        let change = document.querySelector(".subscribeButton");
+        if (change.innerHTML === "Subscribe") {
+          change.innerHTML = "Subscribed";
+          change.classList.add("changed");
+        } else {
+          change.innerHTML = "Subscribe";
+          change.classList.remove("changed");
+        }
+      }
+
+      function amazonCalculator() {
+        const calci = document.querySelector(".costInput");
+        let calculate = Number(calci.value) * 100;
+
+        document.querySelector(".shipDetails").innerHTML = "";
+        document.querySelector(".errorMessage").innerHTML = "";
+
+        if (calculate < 0) {
+          document.querySelector(
+            ".errorMessage"
+          ).innerHTML = `Error: cost can not be less than $0`;
+          return;
+        }
+
+        if (calculate < 4000) {
+          calculate += 1000;
+        }
+
+        document.querySelector(".shipDetails").innerHTML = `$${
+          calculate / 100
+        }`;
+      }
+    </script>
+  </body>
+</html>

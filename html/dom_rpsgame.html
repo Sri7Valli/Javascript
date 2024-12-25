@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM - RPS Game</title>
+    <link rel="stylesheet" href="../styles/dom_rpsgame.css" />
+  </head>
+  <body>
+    <p class="rpsTitle">Rock Paper Scissors</p>
+    <button
+      onclick="
+     rpsGame('Rock'); 
+    
+    "
+      class="buttonElement"
+    >
+      <img class="image" src="../dice-images/rpsgame-emo/rock-emoji.png" />
+    </button>
+    <button
+      onclick="
+    rpsGame('Paper');
+    
+   "
+      class="buttonElement"
+    >
+      <img class="image" src="../dice-images/rpsgame-emo/paper-emoji.png" />
+    </button>
+    <button
+      onclick="
+    rpsGame('Scissors');
+    
+   "
+      class="buttonElement"
+    >
+      <img class="image" src="../dice-images/rpsgame-emo/scissors-emoji.png" />
+    </button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+
+    <p class="js-button"></p>
+
+    <button
+      class="reset-button"
+      onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElements();
+    "
+    >
+      Reset Score
+    </button>
+
+    <script src="../scripts/dom_rpsgame.js"></script>
+  </body>
+</html>

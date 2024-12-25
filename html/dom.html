@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>DOM (Document Object Method)</title>
+  </head>
+  <body>
+    <!-- <p>YouTube Subscribe button</p>
+    <button
+      onclick="
+       subscribedButton();
+    "
+      class="subscribeButton"
+    >
+      Subscribe
+    </button> -->
+
+    <!-- <button class="nineButton">9a</button> -->
+
+    <!-- <button
+      onclick="
+    document.querySelector('.result').innerHTML = `You chose: heads`;
+    "
+    >
+      heads
+    </button>
+    <button
+      onclick="
+    document.querySelector('.result').innerHTML = `You chose: tails`;
+    "
+    >
+      tails
+    </button>
+
+    <p class="result"></p> -->
+
+    <input placeholder="Name" class="name-input" />
+    <button
+      onclick="
+      getName();
+    
+    "
+      class="submitButton"
+    >
+      Submit
+    </button>
+
+    <p class="result"></p>
+
+    <script>
+      // const buttonElement = document.querySelector(".subscribeButton");
+      // function subscribedButton() {
+      //   //.innerText property will gets us the text without the extra spaces.
+      //   // if (buttonElement.innerText === 'Subscribe')
+      //   if (buttonElement.innerHTML === "Subscribe") {
+      //     buttonElement.innerHTML = "Subscribed";
+      //   } else {
+      //     buttonElement.innerHTML = "Subscribe";
+      //   }
+      // }
+
+      // let buttonNine = document.querySelector(".nineButton").innerHTML;
+      // console.log(buttonNine);
+
+      function getName() {
+        const myName = document.querySelector(".name-input");
+        const print = myName.value;
+
+        document.querySelector(".result").innerHTML = `Your name is: ${print}`;
+      }
+    </script>
+  </body>
+</html>

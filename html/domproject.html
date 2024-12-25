@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Shipping Calci</title>
+  </head>
+
+  <body>
+    <input placeholder="Enter" class="js-input" />
+    <button
+      onclick="
+        amazonCalci();
+        
+        "
+      class="calButton"
+    >
+      Calculate
+    </button>
+    <p class="result"></p>
+
+    <script>
+      function amazonCalci() {
+        const enterValue = document.querySelector(".js-input");
+        let displayValue = Number(enterValue.value) * 100;
+
+        if (displayValue < 4000) {
+          displayValue = displayValue + 1000;
+        }
+
+        document.querySelector(".result").innerHTML = `$${displayValue / 100}`;
+      }
+    </script>
+  </body>
+</html>

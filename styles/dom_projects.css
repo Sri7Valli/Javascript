@@ -1,0 +1,38 @@
+body {
+  font-family: arial;
+}
+
+.subscribeButton {
+  border-radius: 20px;
+  width: 95px;
+  height: 35px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.changed {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.costInput {
+  width: 165px;
+  height: 35px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.calciButton {
+  width: 91px;
+  height: 41px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}

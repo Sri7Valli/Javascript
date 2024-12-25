@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises</title>
+  </head>
+  <body>
+    <button
+      class="startButton"
+      onclick="
+        finish();
+        "
+    >
+      Start
+    </button>
+
+    <button
+      onclick="
+      added();
+    "
+      class="addtoCart"
+    >
+      Add to Cart
+    </button>
+
+    <p class="textHere"></p>
+
+    <!-- <input class="typeHere" type="text" placeholder="Type Here" />
+    <button
+      onclick="
+    hobbies();
+    "
+    >
+      Click
+    </button>
+    <p class="enter"></p> -->
+
+    <button
+      onclick="
+     messages++;
+    "
+      class="add"
+    >
+      Add
+    </button>
+    <button
+      onclick="
+    messages--;
+    "
+      class="remove"
+    >
+      Remove
+    </button>
+    <script>
+      let messages = 2;
+      setInterval(function () {
+        if (document.title === "App") {
+          document.title = `${messages}) New messages`;
+        } else {
+          document.title = "App";
+        }
+      }, 1000);
+      //   change();
+
+      //   function change() {
+      //     if (messages === 0) {
+      //       document.title = "App";
+      //     } else if (messages > 0) {
+      //       document.title = `Om NamaShivaya`;
+      //     }
+      //   }
+
+      //   function getAge() {
+      //     "use strict";
+      //     age = 21;
+      //     console.log(age);
+      //   }
+      //   getAge();
+
+      let add = function () {
+        console.log(2 + 3);
+      };
+      add();
+      add();
+
+      function runTwice(fun) {
+        fun();
+        fun();
+      }
+
+      runTwice(function () {
+        console.log("12b");
+      });
+      runTwice(add);
+
+      function finish() {
+        document.querySelector(".startButton").innerHTML = "Loading...";
+        setTimeout(function () {
+          document.querySelector(".startButton").innerHTML = "Finished";
+        }, 1000);
+      }
+
+      function added() {
+        let time;
+        let text = document.querySelector(".textHere");
+        text.innerHTML = "Added";
+
+        clearTimeout(time);
+
+        time = setTimeout(function () {
+          text.innerHTML = "";
+        }, 2000);
+      }
+
+      //   box();
+
+      //   let boxes = [];
+      //   function box() {
+      //     let list = "";
+      //     for (i = 0; i < boxes.length; i++) {
+      //       let list1 = boxes[i];
+      //       let list2 = `
+      //         <p>
+      //             ${list1}
+      //         </p>
+      //         `;
+      //       list += list2;
+      //     }
+      //   }
+      //   console.log(list);
+      //   document.querySelector(".enter").innerHTML = thing;
+
+      //   let box = [];
+      //   function hobbies() {
+      //     let box1 = document.querySelector(".enter");
+      //     let box2 = box1.value;
+      //     boxes.push(box2);
+
+      //     console.log(boxes);
+
+      //     box();
+      //   }
+    </script>
+  </body>
+</html>
